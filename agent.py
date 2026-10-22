@@ -14,9 +14,9 @@ from pathlib import Path
 from claude_agent_sdk import (
     AssistantMessage,
     ClaudeAgentOptions,
+    ClaudeSDKClient,
     ResultMessage,
     TextBlock,
-    query,
 )
 
 ROOT = Path(__file__).resolve().parent
@@ -25,6 +25,8 @@ PROMPT_FILE = ROOT / "prompts" / "research.md"
 
 MODEL = os.getenv("AGENT_MODEL", "claude-sonnet-5-5")
 MAX_TURNS = int(os.getenv("AGENT_MAX_TURNS", "80"))
+MAX_ROUNDS = int(os.getenv("AGENT_MAX_ROUNDS", "4"))
+MIN_CANDIDATES = int(os.getenv("AGENT_MIN_CANDIDATES", "25"))
 
 
 def previous_ranking(today: str) -> str:
@@ -63,26 +65,63 @@ async def run() -> int:
         cwd=str(ROOT),
     )
 
-    async for message in query(prompt=task, options=options):
-        if isinstance(message, AssistantMessage):
-            for block in message.content:
-                if isinstance(block, TextBlock):
-                    print(block.text, flush=True)
-        elif isinstance(message, ResultMessage):
-            cost = getattr(message, "total_cost_usd", None)
-            if cost is not None:
-                print(f"\nRun cost: ${cost:.2f}", flush=True)
+    # The agent tends to stop early when a few sources fail, so after each
+    # round we check the output and send it back to keep researching.
+    prompt = task
+    problem = None
+    async with ClaudeSDKClient(options=options) as client:
+        for round_no in range(1, MAX_ROUNDS + 1):
+            print(f"\n=== Round {round_no} ===", flush=True)
+            await client.query(prompt)
+            async for message in client.receive_response():
+                if isinstance(message, AssistantMessage):
+                    for block in message.content:
+                        if isinstance(block, TextBlock):
+                            print(block.text, flush=True)
+                elif isinstance(message, ResultMessage):
+                    cost = getattr(message, "total_cost_usd", None)
+                    if cost is not None:
+                        print(f"\nRun cost so far: ${cost:.2f}", flush=True)
 
-    if not out_path.exists():
-        print(f"Agent finished without writing {out_path}", file=sys.stderr)
-        return 1
-    try:
-        json.loads(out_path.read_text())
-    except json.JSONDecodeError as err:
-        print(f"{out_path} is not valid JSON: {err}", file=sys.stderr)
-        return 1
+            problem = assess(out_path)
+            if problem is None:
+                break
+            print(f"\nNot done: {problem}", flush=True)
+            prompt = (
+                f"The output is not finished: {problem} Keep researching. "
+                "Try sources you have not used yet: Google Trends rising queries, "
+                "TikTok Creative Center, Exploding Topics, Etsy trend reports, "
+                "Jungle Scout or Helium 10 blog lists, Alibaba product pages for "
+                "factory costs, and Reddit threads found through search. If a page "
+                "fails to load, search for coverage of it instead of giving up. "
+                f"Then rewrite the full file at results/{out_path.name}, keeping "
+                "every candidate you already have."
+            )
+
+    if problem is not None:
+        print(f"Stopping after {MAX_ROUNDS} rounds: {problem}", file=sys.stderr)
+        if not out_path.exists() or "not valid JSON" in problem:
+            return 1
+        print("Scoring the partial results anyway.")
     print(f"Wrote {out_path}")
     return 0
+
+
+def assess(path: Path) -> str | None:
+    """Returns what is still missing from the output, or None if it is complete."""
+    if not path.exists():
+        return f"results/{path.name} has not been written."
+    try:
+        data = json.loads(path.read_text())
+    except json.JSONDecodeError as err:
+        return f"results/{path.name} is not valid JSON ({err})."
+    live = [c for c in data.get("candidates", []) if not c.get("kill_reason")]
+    if len(live) < MIN_CANDIDATES:
+        return (
+            f"only {len(live)} candidates have full economics; "
+            f"the target is at least {MIN_CANDIDATES}."
+        )
+    return None
 
 
 if __name__ == "__main__":

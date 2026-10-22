@@ -42,5 +42,6 @@ If you hit your plan's limits, get an API key at https://console.anthropic.com, 
 ## Tuning
 
 - `AGENT_MODEL` and `AGENT_MAX_TURNS` environment variables control the model and how long the agent can research.
-- Change `PRICE_RANGE`, `MIN_MARGIN_PCT`, and `WEIGHTS` in `score.py`.
+- Change `MIN_CUSTOMER_REVENUE`, `MAX_PRICE`, `MIN_MARGIN_PCT`, and `WEIGHTS` in `score.py`.
+- `AGENT_MIN_CANDIDATES` (default 25) and `AGENT_MAX_ROUNDS` (default 4) control how hard the agent is pushed to keep researching when it stops early.
 - Once you test real products with ads, compare the predicted CAC and margin to what actually happened and adjust the weights.

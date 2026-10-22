@@ -19,7 +19,8 @@ import requests
 ROOT = Path(__file__).resolve().parent
 RESULTS = ROOT / "results"
 
-PRICE_RANGE = (40.0, 200.0)
+MIN_CUSTOMER_REVENUE = 40.0   # price * orders per customer over 12 months
+MAX_PRICE = 200.0             # per order
 MIN_MARGIN_PCT = 0.25
 
 # Weights must sum to 1. Tune these once you have real test results.
@@ -69,9 +70,15 @@ def evaluate(raw: dict) -> tuple[list, list]:
             killed.append({"name": c["name"], "reason": c["kill_reason"]})
             continue
         econ = economics(c)
-        lo, hi = PRICE_RANGE
-        if not lo <= c["price"] <= hi:
-            killed.append({"name": c["name"], "reason": f"price ${c['price']:.0f} outside range"})
+        if c["price"] > MAX_PRICE:
+            killed.append({"name": c["name"], "reason": f"price ${c['price']:.0f} is over ${MAX_PRICE:.0f}"})
+            continue
+        customer_revenue = c["price"] * econ["orders_per_customer"]
+        if customer_revenue < MIN_CUSTOMER_REVENUE:
+            killed.append({
+                "name": c["name"],
+                "reason": f"only ${customer_revenue:.0f} per customer per year (minimum ${MIN_CUSTOMER_REVENUE:.0f})",
+            })
             continue
         if econ["margin_pct"] < MIN_MARGIN_PCT:
             pct = econ["margin_pct"]
