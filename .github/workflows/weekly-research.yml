@@ -1,0 +1,52 @@
+name: weekly-product-research
+
+on:
+  schedule:
+    # Mondays at 15:17 UTC (8:17am Pacific during daylight time, 7:17am in winter)
+    - cron: "17 15 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # The agent SDK drives the Claude Code CLI under the hood.
+      - name: Install dependencies
+        run: |
+          npm install -g @anthropic-ai/claude-code
+          pip install -r requirements.txt
+
+      # Runs on your Claude subscription (token from `claude setup-token`).
+      # To pay per use with an API key instead, replace this env line with
+      # ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Run research agent
+        run: python agent.py
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+
+      - name: Score and post report
+        run: python score.py
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+      - name: Save results to the repo
+        run: |
+          git config user.name "research-bot"
+          git config user.email "research-bot@users.noreply.github.com"
+          git add results/
+          git commit -m "Weekly research $(date +%F)" || echo "Nothing to commit"
+          git push
