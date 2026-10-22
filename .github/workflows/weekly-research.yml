@@ -41,6 +41,9 @@ jobs:
         run: |
           set -o pipefail
           mkdir -p results
+          # Tokens copied from a terminal often pick up spaces or line breaks.
+          CLAUDE_CODE_OAUTH_TOKEN="$(printf '%s' "$CLAUDE_CODE_OAUTH_TOKEN" | tr -d '[:space:]')"
+          export CLAUDE_CODE_OAUTH_TOKEN
           {
             echo "Run started $(date -u)"
             if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
