@@ -33,10 +33,32 @@ jobs:
       # Runs on your Claude subscription (token from `claude setup-token`).
       # To pay per use with an API key instead, replace this env line with
       # ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      # Checks the token's shape without printing it, and saves the agent's
+      # output to results/last_run.log so failures can be read from the repo.
       - name: Run research agent
-        run: python agent.py
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          set -o pipefail
+          mkdir -p results
+          {
+            echo "Run started $(date -u)"
+            if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
+              echo "TOKEN CHECK: secret CLAUDE_CODE_OAUTH_TOKEN is empty or missing"
+            else
+              echo "TOKEN CHECK: length ${#CLAUDE_CODE_OAUTH_TOKEN}"
+              case "$CLAUDE_CODE_OAUTH_TOKEN" in
+                sk-ant-oat01-*) echo "TOKEN CHECK: prefix ok" ;;
+                *) echo "TOKEN CHECK: does not start with sk-ant-oat01-" ;;
+              esac
+              if printf '%s' "$CLAUDE_CODE_OAUTH_TOKEN" | grep -q '[[:space:]]'; then
+                echo "TOKEN CHECK: contains a space or line break"
+              else
+                echo "TOKEN CHECK: no whitespace"
+              fi
+            fi
+          } | tee results/last_run.log
+          python agent.py 2>&1 | tee -a results/last_run.log
 
       - name: Score and post report
         run: python score.py
@@ -44,6 +66,7 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
 
       - name: Save results to the repo
+        if: always()
         run: |
           git config user.name "research-bot"
           git config user.email "research-bot@users.noreply.github.com"
