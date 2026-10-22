@@ -1,0 +1,72 @@
+{
+  "run_date": "2026-10-22",
+  "ranked": [
+    {
+      "name": "Cooling/breathable comforter or duvet insert, premium 'cloud' style, queen",
+      "category": "home / bedding",
+      "kill_reason": null,
+      "price": 119.0,
+      "unit_cost": 22.0,
+      "freight_per_unit": 5.0,
+      "duty_rate": 0.35,
+      "fulfill_fee": 8.0,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 0.8,
+      "est_cvr": 0.09,
+      "expected_orders_per_customer": 1.0,
+      "trend_score": 5,
+      "demand_score": 7,
+      "competition_score": 3,
+      "complaint_score": 5,
+      "fixable_complaints": [
+        "clumps or shifts",
+        "too hot",
+        "smells on arrival"
+      ],
+      "angle": "Use baffle-box construction, a breathable shell, and sleep-trial messaging against mid-market complaints.",
+      "regulatory_notes": "Textile fiber content labeling (FTC), RN/care labeling, and California TB117-2013 where applicable to filled bedding. Prop 65 warnings if relevant.",
+      "notes": "Mellow Sleep MarshMellow Comforter ($200-240) was #10 on TikTok Shop US Q2 2026 ($5.06M). The sleep and recovery keyword uplift (+34% vs. category average in Q1 2026) comes from SellerSprite, a tool vendor, with an unsourced basis. Duty is a rough 0.35 guess because the HTS and Section 301 list are unknown; verify. Bulky packaging raises fees. Confidence: low.",
+      "sources": [
+        "https://www.fastmoss.com/blog/best-selling-tiktok-shop-products-us-q2-2026/",
+        "https://www.sellersprite.com/en/blog/best-products-to-sell-amazon-fba-2026"
+      ],
+      "orders_per_customer": 1.0,
+      "landed_cost": 34.7,
+      "fees": 25.85,
+      "cac": 8.89,
+      "margin": 49.56,
+      "margin_pct": 0.4164799253034548,
+      "score": 6.17
+    }
+  ],
+  "killed": [
+    {
+      "name": "Cordless handheld pressure washer, 21V dual-battery kit with foam/bottle attachments",
+      "reason": "margin after ads -1% is under 25%"
+    },
+    {
+      "name": "Quiet DC-motor pedestal fan with remote, bedroom size, 12-speed",
+      "reason": "margin after ads 23% is under 25%"
+    },
+    {
+      "name": "Private-label magnesium complex capsules (multi-form, 60-90 day supply)",
+      "reason": "price $29 outside range"
+    },
+    {
+      "name": "Private-label collagen peptide + vitamin C powder, 20 oz",
+      "reason": "price $34 outside range"
+    },
+    {
+      "name": "K-beauty style PDRN/peptide recovery balm stick (private-label, cosmetic claims only)",
+      "reason": "price $28 outside range"
+    },
+    {
+      "name": "Smart or no-spill pet water fountain, stainless steel, quiet pump, with replaceable filter",
+      "reason": "margin after ads 21% is under 25%"
+    },
+    {
+      "name": "Air fryer silicone liners and accessory set (reusable, dishwasher safe, multiple sizes)",
+      "reason": "price $24 outside range"
+    }
+  ]
+}
