@@ -1,19 +1,32 @@
-Run started Thu Oct 22 04:45:12 UTC 2026
+Run started Mon Oct 26 20:33:59 UTC 2026
 TOKEN CHECK: length 108
 TOKEN CHECK: prefix ok
 TOKEN CHECK: no whitespace
 
 === Round 1 ===
-I wrote `results/2026-10-22.raw.json` with 29 candidates that have full economics and 2 rejected ones. I couldn't check that the file parses as valid JSON, because the validation command needed approval and didn't run. The counts are from how I wrote the file. Please run a quick parse check before relying on it.
+Status: I've collected Amazon sales data and review complaints for about 20 products. I'm pulling a few more categories now, then I'll write the file.
+I wrote `results/2026-10-26.raw.json` with 29 candidates: 27 have full economics and 2 are rejected. I couldn't validate the file. The check command needed approval, so I haven't confirmed it parses as JSON or that every survivor has at least two sources. I wrote the sources by hand, so please run that check.
 
-Before you use the numbers, know these limits:
-- **Search count:** I ran about 35 searches and a few page fetches, below the 30+ searches and many fetches the brief asked for. The Amazon, Reddit and Google Trends pages couldn't be fetched, so I used articles and aggregator sites that cover the same data.
-- **Unit costs are my estimates.** Most come from rough supplier price ranges and are marked as guesses in each `notes` field. Treat them as placeholders until you have supplier quotes.
-- **Duty rates are not verified per product.** The current stack on Chinese goods is the base duty, plus the old Section 301 lists (7.5% or 25%), plus the new flat 12.5% Section 301 duty that took effect July 24, 2026. The 2026 Supreme Court ruling invalidated the IEEPA tariffs, and the temporary 10% Section 122 tariff expired July 24. I did not look up product-level HTS codes, so each rate is an estimate.
-- **Weak candidates:** The board game, mushroom coffee, weighted blanket and walking pad are the least certain. The walking pad's retail price is close to $80–90 for similar models, so its margin is probably thin.
-- **Borderline on the $40 per customer target:** The press-on nails and pimple patches only reach about $41 with optimistic reorder rates.
+**This run is thinner than the brief asked for.**
+- I ran about 25 searches and about 40 page fetches, short of the 30 searches planned.
+- Reddit and Amazon were not used.
+- Google Trends, TikTok Creative Center and Exploding Topics gave little. Exploding Topics' product list is paywalled.
 
-The two rejects are research-use-only peptides and Stanley-style tumblers with brand logos. I rejected the peptides from general knowledge without researching them, so that entry has no source. An original-design tumbler stays in the list as its own candidate.
+**Where the numbers came from**
+- **Demand and competition:** Amazon sales, prices, ratings and review counts come from ASINSIGHT pages (July–August 2026), which are third-party estimates. Review complaints come from retailer review pages and summaries.
+- **Duty rates:** TariffsTool, checked October 23, and Beato Capital, dated October 15, agree on the stack: 12.5% Section 301 duty, plus 7.5% or 25% on the older China lists, plus MFN. I set each product's rate from that. Their consumer-goods examples conflicted in places and the HTS lists are ambiguous, so every rate is an estimate. A customs broker should confirm them.
+- **Unit cost, freight, fulfillment fee, CPC and conversion rate:** These are my estimates. I found no live Alibaba quotes. They are flagged in each `notes` field.
 
-Run cost so far: $1.10
-Wrote /home/runner/work/product-research-agent/product-research-agent/results/2026-10-22.raw.json
+**Changes versus the 2026-10-22 run**
+- **Kept:** All 7 earlier products stay.
+- **Yoga mat:** I cut the price from $45 to $32. Current top sellers are $19–$31, so $45 wasn't supported.
+- **New:** 20 products were added, including a water flosser, a cat water fountain, magnetic tiles and rosemary hair oil.
+- **Rejected:** A GLP-1 supplement is rejected as an unapproved drug claim; that rejection rests on my knowledge of FDA enforcement and wasn't re-checked this run. Unlicensed Pokémon and World Cup merchandise is rejected as trademark infringement.
+
+**Cautions on the scores and the $40 target**
+- Trend scores rest on single-month month-over-month changes, not 12-month Google Trends data, so confidence is moderate. Magnesium gummies, lip products, weighted blankets and pickleball paddles all fell sharply month over month; I scored them low or noted the risk.
+- Several candidates fall short of the $40 per customer target: press-on nails, pimple patches, heatless curls, posture corrector, trunk organizer and a few others. I kept them with notes rather than dropping them.
+- Two supplement candidates and the toothpaste tablets assume US contract manufacturing, so their duty is 0. Making them in China would add about 20%.
+
+Run cost so far: $1.35
+Wrote /home/runner/work/product-research-agent/product-research-agent/results/2026-10-26.raw.json

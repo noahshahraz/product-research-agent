@@ -1,0 +1,364 @@
+{
+  "run_date": "2026-10-26",
+  "ranked": [
+    {
+      "name": "Pet enrichment bundle: silicone lick mat + fabric snuffle mat + slow feeder bowl",
+      "category": "pet",
+      "kill_reason": null,
+      "price": 43.0,
+      "unit_cost": 6.0,
+      "freight_per_unit": 1.2,
+      "duty_rate": 0.24,
+      "fulfill_fee": 5.0,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 0.6,
+      "est_cvr": 0.09,
+      "expected_orders_per_customer": 1.2,
+      "trend_score": 7,
+      "demand_score": 7,
+      "competition_score": 5,
+      "complaint_score": 5,
+      "fixable_complaints": [
+        "suction cups fail",
+        "mat tears when chewed",
+        "hard to clean snuffle fabric"
+      ],
+      "angle": "Bundle three matched pieces with dishwasher-safe, stronger-suction silicone and a feeding guide, priced above the $7 single mats.",
+      "regulatory_notes": "Food-contact silicone should be FDA 21 CFR 177.2600 compliant (LFGB/FDA test report from the factory) even though pet-use; no CPSIA needed. Avoid health claims ('cures anxiety').",
+      "notes": "ASINSIGHT July 2026: top lick-mat listings $6-$17 selling 2K-7K/mo, several +50-100% MoM; best price point seen is $40.99 for a bundle-like listing selling 2K/mo. A US storefront quoted $10/unit at 500 units for custom lick mats (retail-style quote, higher than factory). My $6.00 bundle cost is an estimate. Pet feeder toys market projected 8% CAGR 2026-2034.",
+      "sources": [
+        "https://www.asinsight.com/report/US/lick-mats-for-dogs",
+        "https://www.fortunebusinessinsights.com/pet-feeder-toys-market-118480",
+        "https://www.imarcgroup.com/lick-mats-market",
+        "https://uchangepromo.com/products/silicone-with-suction-cups-slow-feeder-lick-mat"
+      ],
+      "orders_per_customer": 1.2,
+      "landed_cost": 8.64,
+      "fees": 11.45,
+      "cac": 6.67,
+      "margin": 20.83,
+      "margin_pct": 0.40359173126614983,
+      "score": 6.78
+    },
+    {
+      "name": "Rosemary hair oil + scalp massager kit",
+      "category": "beauty/hair",
+      "kill_reason": null,
+      "price": 28.0,
+      "unit_cost": 4.2,
+      "freight_per_unit": 0.6,
+      "duty_rate": 0.2,
+      "fulfill_fee": 3.8,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 0.7,
+      "est_cvr": 0.11,
+      "expected_orders_per_customer": 1.9,
+      "trend_score": 8,
+      "demand_score": 9,
+      "competition_score": 3,
+      "complaint_score": 4,
+      "fixable_complaints": [
+        "greasy",
+        "strong smell",
+        "no visible growth"
+      ],
+      "angle": "Pair a lightweight non-greasy oil with a silicone scalp brush in a gift box, selling the routine not a 'growth' promise.",
+      "regulatory_notes": "Cosmetic: MoCRA facility registration and product listing, safety substantiation, ingredient labeling. Do NOT claim 'regrows hair' or 'treats hair loss' (drug claim).",
+      "notes": "ASINSIGHT July 2026: Mielle rosemary oil sold 60K/mo at $9.94 with 122K reviews and grew 100% MoM; others $10-$30 selling 6K-20K. Scalp massagers sell 4K-10K/mo at $5-$29 (one $12.99 at 2.5 stars). Customers repurchase oil, so 1.9 orders; assumes a 2-month supply. Duty: HTS 3305 List 4A + 12.5%.",
+      "sources": [
+        "https://www.asinsight.com/report/US/rosemary-oil-for-hair-growth",
+        "https://www.asinsight.com/report/US/scalp-massager",
+        "https://www.tariffstool.com/tariffs-from-china"
+      ],
+      "orders_per_customer": 1.9,
+      "landed_cost": 5.64,
+      "fees": 8.0,
+      "cac": 6.36,
+      "margin": 20.92,
+      "margin_pct": 0.3932399179767601,
+      "score": 6.75
+    },
+    {
+      "name": "Toothpaste tablets, 3-month supply in refill pouch",
+      "category": "personal care",
+      "kill_reason": null,
+      "price": 28.0,
+      "unit_cost": 5.0,
+      "freight_per_unit": 0.4,
+      "duty_rate": 0.0,
+      "fulfill_fee": 3.8,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 0.9,
+      "est_cvr": 0.11,
+      "expected_orders_per_customer": 2.0,
+      "trend_score": 6,
+      "demand_score": 7,
+      "competition_score": 5,
+      "complaint_score": 5,
+      "fixable_complaints": [
+        "crumble in transit",
+        "chalky taste",
+        "glass jar breaks"
+      ],
+      "angle": "Use a plastic-free pouch and a subscription that lines up with the 3-month supply.",
+      "regulatory_notes": "Fluoride toothpaste is an OTC drug (FDA monograph, drug listing, Drug Facts label). Fluoride-free tablets are cosmetics under MoCRA (facility registration, product listing). Do not claim to prevent cavities without fluoride.",
+      "notes": "ASINSIGHT Mar 2026: NOBS 3-month pack at $38.24 sells about 10K/mo with 8.5K reviews, showing bundle pricing works. Assumes US contract manufacturer (duty 0); China sourcing would add about 0.2. No MoM data available.",
+      "sources": [
+        "https://www.asinsight.com/report/US/toothpaste-tablets",
+        "https://www.sellersprite.com/en/blog/amazon-fba-fees-2026-complete-guide",
+        "https://explodingtopics.com/blog/find-trending-products"
+      ],
+      "orders_per_customer": 2.0,
+      "landed_cost": 5.4,
+      "fees": 8.0,
+      "cac": 8.18,
+      "margin": 21.02,
+      "margin_pct": 0.3753246753246754,
+      "score": 6.38
+    },
+    {
+      "name": "Hard water shower filter head, 15-stage vitamin C/KDF, with 2 spare cartridges",
+      "category": "home",
+      "kill_reason": null,
+      "price": 45.0,
+      "unit_cost": 9.5,
+      "freight_per_unit": 1.6,
+      "duty_rate": 0.4,
+      "fulfill_fee": 5.6,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 0.9,
+      "est_cvr": 0.1,
+      "expected_orders_per_customer": 1.4,
+      "trend_score": 7,
+      "demand_score": 9,
+      "competition_score": 4,
+      "complaint_score": 7,
+      "fixable_complaints": [
+        "cartridge only lasts about a month with heavy chlorine",
+        "pressure drops as filter clogs",
+        "leaks / cartridges don't seat",
+        "plastic housing durability"
+      ],
+      "angle": "Ship a metal-swivel head with a thread-seal gasket and 3 cartridges, and add a reorder reminder card for a 2-3 month replacement cycle.",
+      "regulatory_notes": "Do not claim to treat skin conditions or remove contaminants beyond what is tested; NSF/ANSI 177 (vitamin C shower filter) is the only certification, so avoid 'certified' wording without it. If sold to Amazon, home category is open. Treat as water-treatment device marketing: no health claims. Replacement cartridges are a separate SKU for repeat sales.",
+      "notes": "ASINSIGHT July 2026: top 10 sell 5-10K units/mo at $19-$43; two listings grew 100% MoM. Leaders have 12K-69K reviews, but a $38 listing sells 7K/mo with only 933 reviews, so entry is possible. Unit cost is my estimate for a 300-500 unit order (no live Alibaba quote); duty assumes HTS 8421.21 on Section 301 List 3 (25%) + 12.5% + MFN, about 0.40; verify with a broker. Repeat orders 1.4 assumed because many buyers never reorder cartridges.",
+      "sources": [
+        "https://www.asinsight.com/report/US/shower-filter",
+        "https://www.walmart.com/ip/232067455",
+        "https://www.lowes.com/reviews/sprite-ae7-bn-shower-heads/5016338675",
+        "https://www.tariffstool.com/tariffs-from-china"
+      ],
+      "orders_per_customer": 1.4,
+      "landed_cost": 14.9,
+      "fees": 12.35,
+      "cac": 9.0,
+      "margin": 15.85,
+      "margin_pct": 0.2515873015873016,
+      "score": 6.16
+    },
+    {
+      "name": "Creatine monohydrate gummies, 60 count, US contract-manufactured",
+      "category": "supplements",
+      "kill_reason": null,
+      "price": 30.0,
+      "unit_cost": 5.5,
+      "freight_per_unit": 0.3,
+      "duty_rate": 0.0,
+      "fulfill_fee": 3.9,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 1.3,
+      "est_cvr": 0.1,
+      "expected_orders_per_customer": 2.0,
+      "trend_score": 6,
+      "demand_score": 7,
+      "competition_score": 4,
+      "complaint_score": 6,
+      "fixable_complaints": [
+        "underdosed creatine per gummy",
+        "sugary",
+        "too many gummies per serving"
+      ],
+      "angle": "Dose-transparent 5 g per serving with third-party lab results.",
+      "regulatory_notes": "Dietary supplement rules: FDA registration, cGMP, Supplement Facts, DSHEA claims only. Amazon requires third-party testing for supplements. Check gummy creatine dose labeling; some gummies underdeliver and draw FTC/FDA attention.",
+      "notes": "ASINSIGHT July 2026: gummy listings at about 10K/mo each, leader is a capsule not a gummy. Market report claims 8-10% CAGR (promotional). Unit cost is my guess; low confidence on dose economics (5 g needs a big gummy count).",
+      "sources": [
+        "https://www.asinsight.com/report/US/creatine-gummies",
+        "https://forinsightreport.digitalpress.blog/creatine-gummies-market-growth-2026-key-drivers-and-future-opportunities/",
+        "https://www.sellersprite.com/en/blog/amazon-fba-fees-2026-complete-guide"
+      ],
+      "orders_per_customer": 2.0,
+      "landed_cost": 5.8,
+      "fees": 8.4,
+      "cac": 13.0,
+      "margin": 18.6,
+      "margin_pct": 0.30999999999999994,
+      "score": 5.92
+    },
+    {
+      "name": "Magnesium glycinate gummies, 60 count, US contract-manufactured",
+      "category": "supplements",
+      "kill_reason": null,
+      "price": 26.0,
+      "unit_cost": 4.3,
+      "freight_per_unit": 0.3,
+      "duty_rate": 0.0,
+      "fulfill_fee": 3.8,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 1.2,
+      "est_cvr": 0.12,
+      "expected_orders_per_customer": 2.2,
+      "trend_score": 5,
+      "demand_score": 9,
+      "competition_score": 2,
+      "complaint_score": 4,
+      "fixable_complaints": [
+        "gummies stick together",
+        "too sweet",
+        "low magnesium per serving"
+      ],
+      "angle": "Sell a sugar-reduced gummy with a clearly stated elemental magnesium dose and a 90-day subscription.",
+      "regulatory_notes": "Dietary supplement: FDA facility registration, cGMP (21 CFR 111) via the contract manufacturer, Supplement Facts label, structure/function claims only with the DSHEA disclaimer and FDA notification within 30 days. Amazon requires third-party testing for supplements.",
+      "notes": "ASINSIGHT June 2026: top sellers 10K-80K/mo, but every product with a trend value was down 30-50% MoM, so the trend score is set to 5 pending a longer series. Assumes US manufacturing (duty 0); if made in China add about 0.20+. Repeat 2.2 orders/yr assumes some subscribers; a 30-day supply bought twice. Unit cost is an estimate from typical gummy contract quotes.",
+      "sources": [
+        "https://www.asinsight.com/report/US/magnesium-glycinate-gummies",
+        "https://www.asinsight.com/report/US/gummy-magnesium-glycinate",
+        "https://www.sellersprite.com/en/blog/amazon-fba-fees-2026-complete-guide"
+      ],
+      "orders_per_customer": 2.2,
+      "landed_cost": 4.6,
+      "fees": 7.7,
+      "cac": 10.0,
+      "margin": 20.14,
+      "margin_pct": 0.3520979020979021,
+      "score": 5.71
+    },
+    {
+      "name": "Microwavable weighted neck wrap + eye mask gift set",
+      "category": "wellness",
+      "kill_reason": null,
+      "price": 35.0,
+      "unit_cost": 6.0,
+      "freight_per_unit": 0.9,
+      "duty_rate": 0.27,
+      "fulfill_fee": 5.0,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 0.6,
+      "est_cvr": 0.09,
+      "expected_orders_per_customer": 1.15,
+      "trend_score": 4,
+      "demand_score": 7,
+      "competition_score": 4,
+      "complaint_score": 5,
+      "fixable_complaints": [
+        "filling smells when heated",
+        "cover not removable",
+        "uneven heat"
+      ],
+      "angle": "Sell it as a gift set with a washable cover and unscented flax/clay fill.",
+      "regulatory_notes": "Textile labeling; burn-risk warning label and heating instructions. No medical claims.",
+      "notes": "No direct ASINSIGHT page for heat wraps; the neck-massager and weighted-blanket pages show seasonal volatility (weighted blankets down 20-55% MoM in June 2026). Trend score lowered to 4. Demand score is an estimate from adjacent categories.",
+      "sources": [
+        "https://www.asinsight.com/report/US/weighted-blanket",
+        "https://www.asinsight.com/report/US/neck-massager",
+        "https://www.tariffstool.com/tariffs-from-china"
+      ],
+      "orders_per_customer": 1.15,
+      "landed_cost": 8.52,
+      "fees": 10.25,
+      "cac": 6.67,
+      "margin": 12.0,
+      "margin_pct": 0.2980828157349896,
+      "score": 5.29
+    }
+  ],
+  "killed": [
+    {
+      "name": "Premium press-on nail kit (24 nails x several sets, glue and prep kit)",
+      "reason": "only $36 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Hydrocolloid pimple patch multipack (120 patches, 3 sizes)",
+      "reason": "only $34 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Satin sleep bonnet + silk pillowcase set",
+      "reason": "only $32 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Extra-thick non-slip yoga/exercise mat 6mm with strap",
+      "reason": "only $32 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Heatless curling set: satin rod, scrunchies and overnight cap",
+      "reason": "only $21 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Stainless steel cat water fountain 2.5L, quiet pump, with spare filters",
+      "reason": "margin after ads 20% is under 25%"
+    },
+    {
+      "name": "Orthopedic calming donut dog bed, medium/large, washable cover",
+      "reason": "margin after ads 9% is under 25%"
+    },
+    {
+      "name": "Adjustable posture corrector, sized S/M/L, breathable underarm padding",
+      "reason": "only $30 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Magnetic fridge spice rack with 6 labeled stainless jars",
+      "reason": "only $28 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Cordless rechargeable water flosser with 6 tips and travel case",
+      "reason": "margin after ads -7% is under 25%"
+    },
+    {
+      "name": "Handheld red light therapy wand (rechargeable)",
+      "reason": "margin after ads 6% is under 25%"
+    },
+    {
+      "name": "Shiatsu neck and back massager with heat",
+      "reason": "margin after ads 3% is under 25%"
+    },
+    {
+      "name": "Magnetic building tiles set, 60 pieces, ASTM F963-compliant",
+      "reason": "margin after ads 23% is under 25%"
+    },
+    {
+      "name": "Pickleball paddle set (2 paddles, 4 balls, bag), fiberglass",
+      "reason": "margin after ads 16% is under 25%"
+    },
+    {
+      "name": "Resistance band kit with handles, door anchor and ankle straps",
+      "reason": "only $28 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Graduated compression socks 20-30 mmHg, 3 pairs",
+      "reason": "only $35 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Foldable car trunk organizer with cooler section",
+      "reason": "only $22 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Stainless gua sha + ice roller + lymphatic brush facial kit in gift box",
+      "reason": "only $29 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Lip oil trio gift set (3 tinted glossy lip oils, box)",
+      "reason": "only $38 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Weighted blanket 15 lb with removable cover",
+      "reason": "margin after ads -20% is under 25%"
+    },
+    {
+      "name": "GLP-1 'support' supplement",
+      "reason": "Products marketed as GLP-1 drugs or mimics cannot legally be sold as supplements; FDA treats them as unapproved drugs and sends warning letters."
+    },
+    {
+      "name": "Unlicensed Pokemon / World Cup 2026 themed merchandise (Etsy)",
+      "reason": "Trademark and licence-protected brands; unlicensed goods are counterfeit/infringing and cannot be legally sold in the US."
+    }
+  ]
+}
