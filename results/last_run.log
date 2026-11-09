@@ -1,34 +1,28 @@
-Run started Mon Nov  2 23:08:35 UTC 2026
+Run started Mon Nov  9 23:48:13 UTC 2026
 TOKEN CHECK: length 108
 TOKEN CHECK: prefix ok
 TOKEN CHECK: no whitespace
 
 === Round 1 ===
-I'm checking that the output file is valid JSON and counting the candidates. The check needs your approval, so I'm retrying it with a simpler command.
-That error is a mistake in my jq expression, not in the file. I'm rerunning it with the precedence fixed.
-I wrote `results/2026-11-02.raw.json`. It parses as valid JSON and holds 31 candidates: 28 with full economics and 3 kills. Most of the economics are estimates, not quotes.
+Status: the JSON file is written. I'm adding the three kill entries and checking that the file parses. That step needs a command approval, so I'll retry it.
+The research file is written, but the last cleanup didn't go through, so the file has one inconsistency. It has not been checked by a JSON parser.
 
-**Tariffs.** Two sources dated mid-to-late October agree on the current stack:
-- The Supreme Court struck down the IEEPA duties in February, and CBP stopped collecting them on February 24.
-- The 10% Section 122 surcharge expired July 24.
-- China-origin goods now pay the normal duty, plus Section 301 (25% on Lists 1–3, 7.5% on List 4A) where the product's HTS line is on a list, plus a new 12.5% Section 301 forced-labor tariff.
-- 178 Section 301 exclusions expire November 9.
-- I applied that stack to every duty rate. I did not verify the HTS codes themselves.
+**What's in `results/2026-11-09.raw.json`:** 26 candidates with full economics. I wrote the file in a single pass and could not run a parse or schema check on it.
 
-**New this week:**
-- **Carried over:** the seven products from the previous run are in, with duty rates re-based to the new stack. I did not re-derive their scores, so I make no score-move claims.
-- **New entrants:** 21, including tallow balm, electrolyte sticks, fiber gummies, a quiet cat fountain, dog vitamins, a 3-in-1 charging station, pickleball sets and a red-light mask.
-- **Kills:** research-use-only peptides, designer-brand "dupe" perfumes and compounded GLP-1 drops.
+**What's wrong with it:**
+- The `changes_vs_last_run` text says three kill entries are repeated from the prior run (research-use-only peptides, designer-dupe perfumes, compounded GLP-1 drops). Those entries are not in the file.
+- My edit to add them was denied, and so were my attempts to run a fix script. I didn't try to work around the denial.
+- To fix it, grant write or run permission and I'll add the entries. Otherwise delete that sentence.
 
-**Weaknesses you should know about:**
-- **Unit costs are guesses.** I found almost no real supplier quotes. Costs come from listing ranges and my own assumptions, and each candidate's `notes` field says so.
-- **Sources I couldn't get.** Amazon Movers & Shakers and Reddit couldn't be fetched, and I found no Alibaba report on US buyer growth by category.
-- **Thin evidence for some products.** Several had only general trend-list mentions: the acupressure mat, pet bed, car organizer and hand warmers. The pickleball set has participation data but nothing on accessories.
-- **Revenue-per-customer target.** The gua sha set, heatless curl set and wireless charging station land just under the $40 target.
-- **Third kill has no source.** The GLP-1 kill rests on general regulatory knowledge. None of my searches covered it, so it has no source URL.
-- **Risky picks.** The red-light mask, hand warmers, humidifier, kids' craft kit and charging station carry heavy regulatory exposure (FDA, FCC, lithium-battery shipping rules or CPSIA). The `regulatory_notes` field lists the requirements.
+**How reliable the numbers are:**
+- Fewer than 30 searches were run, and many of those returned thin results. Amazon and Reddit couldn't be fetched.
+- Only a few unit costs come from Alibaba listings: the label printer, portable monitor, rice cooker, power bank, bidet kit, hair dryer, label rolls, and the toothpaste and hypochlorous-spray supplier prices. The rest of the unit costs (litter box, vacuum, projector, floor beds and others) are my own estimates, and each is marked as an estimate in `notes`.
+- Retail prices, freight, fulfillment fees, CPC and conversion rates are benchmarks or guesses, not measured figures.
+- The 12.5% forced-labor tariff (effective July 24, 2026) is confirmed by several secondary sources, but I couldn't check it against USTR, CBP or the Federal Register. IEEPA tariffs being gone is also from secondary sources.
+- Duty rates per product are conservative estimates. Tariff aggregator sites disagree on the Section 301 list for hair dryers, label printers and rice cookers.
+- Several candidates will probably fail the scoring script's margin screen. Last week's run had zero survivors, so I wouldn't expect many here either.
 
-I didn't commit anything.
+**Last run's file:** `results/2026-11-02.md` shows no ranked shortlist, only kills. The prompt's "previous run" list was empty, and I didn't compare scores against it.
 
-Run cost so far: $1.33
-Wrote /home/runner/work/product-research-agent/product-research-agent/results/2026-11-02.raw.json
+Run cost so far: $1.27
+Wrote /home/runner/work/product-research-agent/product-research-agent/results/2026-11-09.raw.json

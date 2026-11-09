@@ -1,0 +1,213 @@
+{
+  "run_date": "2026-11-09",
+  "ranked": [
+    {
+      "name": "Hypochlorous acid face and body spray 2-pack, 3.4 oz",
+      "category": "skincare",
+      "kill_reason": null,
+      "price": 39.99,
+      "unit_cost": 6.0,
+      "freight_per_unit": 1.0,
+      "duty_rate": 0.0,
+      "fulfill_fee": 4.2,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 1.4,
+      "est_cvr": 0.1,
+      "expected_orders_per_customer": 1.8,
+      "trend_score": 8,
+      "demand_score": 6,
+      "competition_score": 5,
+      "complaint_score": 5,
+      "fixable_complaints": [
+        "short shelf life",
+        "spray nozzle fails",
+        "no proof it works"
+      ],
+      "angle": "Opaque, stable bottle with a dated expiry and cosmetic-only positioning.",
+      "regulatory_notes": "Cosmetic under MoCRA (facility registration, product listing, safety substantiation). Avoid 'treats acne/eczema' (drug) and 'disinfects/kills germs' (EPA pesticide registration under FIFRA). Amazon beauty may ask for documents.",
+      "notes": "5-year search growth +8,900% (Exploding Topics). Ulta comp: $27 per 4 oz. Private-label sources: Pravada MOQ 50-250; Alibaba-sourced listings $0.65-1.06/unit but unverified. I used $3 per unit contract-made in the US and 0% duty (US fill; imported components not included). Orders/year guess.",
+      "sources": [
+        "https://explodingtopics.com/blog/trending-products",
+        "https://pravadaprivatelabel.com/products/hypochlorous-acid-spray",
+        "https://www.ulta.com/p/trust-me-on-this-hypochlorous-acid-spray-pimprod2053660"
+      ],
+      "orders_per_customer": 1.8,
+      "landed_cost": 7.0,
+      "fees": 10.2,
+      "cac": 14.0,
+      "margin": 27.02,
+      "margin_pct": 0.3754369147842517,
+      "score": 6.63
+    },
+    {
+      "name": "Fluoride-free nano-hydroxyapatite toothpaste, 3-pack of 3.4 oz tubes",
+      "category": "oral care",
+      "kill_reason": null,
+      "price": 44.99,
+      "unit_cost": 7.5,
+      "freight_per_unit": 1.2,
+      "duty_rate": 0.2,
+      "fulfill_fee": 4.5,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 1.3,
+      "est_cvr": 0.1,
+      "expected_orders_per_customer": 1.8,
+      "trend_score": 8,
+      "demand_score": 7,
+      "competition_score": 4,
+      "complaint_score": 5,
+      "fixable_complaints": [
+        "gritty texture",
+        "price per tube",
+        "flavor is weak"
+      ],
+      "angle": "Smooth 10% nHA formula in a 3-pack with a refill-by-mail option, compared against Boka/Apagard.",
+      "regulatory_notes": "Fluoride-free toothpaste is generally a cosmetic: MoCRA facility registration, product listing, safety substantiation, ingredient labeling, adverse event reporting. Do not claim to treat or prevent cavities or remineralize enamel (drug claims). Fluoride versions are OTC drugs.",
+      "notes": "5-year search growth +6,200% (Exploding Topics). Supplier listings show $0.26-0.70 per tube (MOQ 72-10,000), but those are bare tubes; I used $2.50 per tube for a contract-made, boxed product. 1.8 orders/yr is a guess; a tube lasts ~6 weeks. Duty guess is 7.5% List 4A + 12.5%.",
+      "sources": [
+        "https://explodingtopics.com/blog/trending-products",
+        "https://www.alibaba.com/discover/teeth-cleansing.html",
+        "https://www.cinoll.com/faqs/"
+      ],
+      "orders_per_customer": 1.8,
+      "landed_cost": 10.2,
+      "fees": 11.25,
+      "cac": 13.0,
+      "margin": 29.37,
+      "margin_pct": 0.3627312242226669,
+      "score": 6.54
+    },
+    {
+      "name": "Peptide eye cream, 0.5 oz, 2-pack",
+      "category": "skincare",
+      "kill_reason": null,
+      "price": 44.99,
+      "unit_cost": 12.0,
+      "freight_per_unit": 0.8,
+      "duty_rate": 0.0,
+      "fulfill_fee": 4.2,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 1.5,
+      "est_cvr": 0.1,
+      "expected_orders_per_customer": 1.8,
+      "trend_score": 8,
+      "demand_score": 6,
+      "competition_score": 3,
+      "complaint_score": 5,
+      "fixable_complaints": [
+        "irritates eyes",
+        "pump clogs",
+        "small amount for price"
+      ],
+      "angle": "Airless pump, fragrance-free formula, 2-pack sized for 3 months.",
+      "regulatory_notes": "Cosmetic under MoCRA: facility registration and product listing, safety substantiation, label ingredients. No claims to repair collagen or treat wrinkles at a structural level (drug claims). Expect Amazon beauty gating.",
+      "notes": "Exploding Topics: 6,600/mo, +325%. Private-label quotes conflict: $2.40-4.80 at 500u in one guide vs $4-22 in another; I used $6 per jar x2. Orders/yr 1.8 is a guess. Heavily competed by established brands.",
+      "sources": [
+        "https://explodingtopics.com/product-topics",
+        "https://xiranskincare.com/top-10-private-label-peptide-skincare-manufacturers/",
+        "https://www.pravadaprivatelabel.com/products/advanced-firming-eye-cream"
+      ],
+      "orders_per_customer": 1.8,
+      "landed_cost": 12.8,
+      "fees": 10.95,
+      "cac": 15.0,
+      "margin": 23.23,
+      "margin_pct": 0.2869119063495591,
+      "score": 5.71
+    }
+  ],
+  "killed": [
+    {
+      "name": "Bluetooth/USB 4x6 thermal shipping label printer (110mm), with starter label roll",
+      "reason": "margin after ads -18% is under 25%"
+    },
+    {
+      "name": "15.6-inch 1080p USB-C portable monitor with magnetic cover stand",
+      "reason": "margin after ads 0% is under 25%"
+    },
+    {
+      "name": "1L mini rice cooker with steam tray, non-stick pot",
+      "reason": "only $40 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Foldable ionic travel hair dryer with diffuser and storage pouch",
+      "reason": "margin after ads 8% is under 25%"
+    },
+    {
+      "name": "20,000mAh 45W power bank with built-in USB-C cable and display",
+      "reason": "only $40 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Non-electric dual-nozzle bidet attachment plus handheld travel bidet kit",
+      "reason": "margin after ads 4% is under 25%"
+    },
+    {
+      "name": "Self-adhesive PET felt acoustic wall panels, 24-pack 12x12 in",
+      "reason": "margin after ads -24% is under 25%"
+    },
+    {
+      "name": "Magnetic wall/fridge shelf, 2-pack with steel mounting plates",
+      "reason": "only $40 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Car wash foam sprayer kit: 2L pump foamer, 2 microfiber mitts, soap sample",
+      "reason": "margin after ads 17% is under 25%"
+    },
+    {
+      "name": "Japanese-style shiki floor futon mattress, twin, removable washable cover",
+      "reason": "margin after ads 19% is under 25%"
+    },
+    {
+      "name": "Tri-fold foam floor bed, twin, with washable cover",
+      "reason": "margin after ads 12% is under 25%"
+    },
+    {
+      "name": "Collagen protein powder, unflavored or vanilla, 30 servings, US-made",
+      "reason": "margin after ads 20% is under 25%"
+    },
+    {
+      "name": "Self-cleaning automatic cat litter box",
+      "reason": "margin after ads 4% is under 25%"
+    },
+    {
+      "name": "Electric heated bidet toilet seat with warm water, 2 nozzles",
+      "reason": "margin after ads -5% is under 25%"
+    },
+    {
+      "name": "Lightweight cordless stick vacuum with 2 batteries",
+      "reason": "margin after ads 11% is under 25%"
+    },
+    {
+      "name": "Rechargeable neck and shoulder massager with heat",
+      "reason": "margin after ads 1% is under 25%"
+    },
+    {
+      "name": "Portable mini projector, 1080p supported, with tripod",
+      "reason": "margin after ads -2% is under 25%"
+    },
+    {
+      "name": "Under-sink or countertop microplastic-reducing water filter",
+      "reason": "margin after ads 8% is under 25%"
+    },
+    {
+      "name": "Padel starter set: 2 rackets, 3 balls, bag",
+      "reason": "margin after ads 11% is under 25%"
+    },
+    {
+      "name": "Draped-front midi skirt in satin, sizes XS-XL",
+      "reason": "margin after ads 19% is under 25%"
+    },
+    {
+      "name": "Electric heated throw blanket, 50x60 in, auto shut-off",
+      "reason": "margin after ads 5% is under 25%"
+    },
+    {
+      "name": "Cordless rechargeable Japandi-style table lamp, touch dimmer",
+      "reason": "margin after ads 13% is under 25%"
+    },
+    {
+      "name": "4x6 direct thermal shipping label rolls, 6 rolls x 500 labels",
+      "reason": "margin after ads -32% is under 25%"
+    }
+  ]
+}
