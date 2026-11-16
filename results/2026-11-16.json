@@ -1,0 +1,259 @@
+{
+  "run_date": "2026-11-16",
+  "ranked": [
+    {
+      "name": "Hypochlorous acid face and body spray 2-pack, 3.4 oz",
+      "category": "skincare",
+      "kill_reason": null,
+      "price": 39.99,
+      "unit_cost": 6.0,
+      "freight_per_unit": 1.0,
+      "duty_rate": 0.0,
+      "fulfill_fee": 4.2,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 1.5,
+      "est_cvr": 0.09,
+      "expected_orders_per_customer": 1.8,
+      "trend_score": 8,
+      "demand_score": 7,
+      "competition_score": 5,
+      "complaint_score": 5,
+      "fixable_complaints": [
+        "short shelf life",
+        "spray nozzle fails",
+        "no proof it works"
+      ],
+      "angle": "Opaque, stable bottle with a dated expiry and cosmetic-only positioning against Briotech and Ulta brands.",
+      "regulatory_notes": "Cosmetic under MoCRA (facility registration, product listing, safety substantiation, ingredient labeling). Avoid 'treats acne/eczema' (drug) and 'disinfects/kills germs' (likely EPA FIFRA pesticide claims). Amazon beauty may require documents.",
+      "notes": "Exploding Topics: 148,400 searches/mo, +8,900% over 5 years. Pravada US private label: MOQ 50-250 units, sample $8.45, no per-unit price published. Marketplace China listings $0.65-1.06/unit (unverified). I assumed $3/unit US contract-filled (2-pack = $6) and 0% duty because it is US-filled; imported components are not counted. Orders/yr 1.8 is a guess (unit lasts ~2 months). Competition and complaint scores are judgment, not measured review counts.",
+      "sources": [
+        "https://explodingtopics.com/blog/trending-products",
+        "https://pravadaprivatelabel.com/products/hypochlorous-acid-spray",
+        "https://www.walmart.com/ip/Briotech-Topical-Skin-Spray-Hypochlorous-Acid-for-Sensitive-Skin-4-fl-oz-2-Pack/2705673094"
+      ],
+      "orders_per_customer": 1.8,
+      "landed_cost": 7.0,
+      "fees": 10.2,
+      "cac": 16.67,
+      "margin": 24.36,
+      "margin_pct": 0.33839061617256166,
+      "score": 6.52
+    },
+    {
+      "name": "Fluoride-free nano-hydroxyapatite toothpaste, 3-pack of 3.4 oz tubes",
+      "category": "oral care",
+      "kill_reason": null,
+      "price": 44.99,
+      "unit_cost": 7.5,
+      "freight_per_unit": 1.2,
+      "duty_rate": 0.2,
+      "fulfill_fee": 4.5,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 1.3,
+      "est_cvr": 0.09,
+      "expected_orders_per_customer": 1.8,
+      "trend_score": 8,
+      "demand_score": 7,
+      "competition_score": 4,
+      "complaint_score": 5,
+      "fixable_complaints": [
+        "gritty texture",
+        "price per tube",
+        "weak flavor"
+      ],
+      "angle": "Smooth 10% nHA formula in a 3-pack with a refill option, positioned against Boka and Apagard.",
+      "regulatory_notes": "Fluoride-free toothpaste is generally a cosmetic: MoCRA facility registration, product listing, ingredient labeling. Do not claim to prevent cavities or remineralize enamel (drug claims). Fluoride versions are OTC drugs.",
+      "notes": "Exploding Topics: 43,300 searches/mo, +6,200% over 5 years. Chinese listings $0.19-0.80/tube at MOQ 20-10,000 (bare product, no tube/box/landed cost). Cinoll says it treats fluoride-free toothpaste as a MoCRA cosmetic (supplier claim). I used $2.50/tube boxed. Duty = assumed 7.5% List 4A + 12.5%; HTS list status not confirmed. Orders/yr 1.8 is a guess.",
+      "sources": [
+        "https://explodingtopics.com/blog/trending-products",
+        "https://www.alibaba.com/discover/teeth-cleansing.html",
+        "https://www.cinoll.com/faqs/"
+      ],
+      "orders_per_customer": 1.8,
+      "landed_cost": 10.2,
+      "fees": 11.25,
+      "cac": 14.44,
+      "margin": 27.93,
+      "margin_pct": 0.34489461306902236,
+      "score": 6.41
+    },
+    {
+      "name": "Creatine monohydrate gummies, 60 count (private label)",
+      "category": "supplements",
+      "kill_reason": null,
+      "price": 29.99,
+      "unit_cost": 3.0,
+      "freight_per_unit": 0.8,
+      "duty_rate": 0.2,
+      "fulfill_fee": 3.9,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 1.6,
+      "est_cvr": 0.1,
+      "expected_orders_per_customer": 2.2,
+      "trend_score": 8,
+      "demand_score": 9,
+      "competition_score": 1,
+      "complaint_score": 6,
+      "fixable_complaints": [
+        "less creatine than label",
+        "sugar content",
+        "sticky gummies"
+      ],
+      "angle": "Third-party-tested gummies with the full 5 g dose per serving and a clean sugar profile.",
+      "regulatory_notes": "Dietary supplement: cGMP (21 CFR 111), FDA facility registration, Supplement Facts panel, no disease claims, adverse event reporting. Amazon requires supplement category approval and third-party test reports. Imported food-type goods need FDA prior notice.",
+      "notes": "Exploding Topics: 117,700/mo, +5,200% over 5 years. Alibaba listings show $1.50-5.00 per unit at MOQ ~100 boxes to 2,000 bottles; claims of FDA/NSF are seller assertions. Many gummies fail the dose claim (5 g does not fit in a gummy), which is also a lawsuit risk. Competition is dominated by big brands. Duty guess.",
+      "sources": [
+        "https://explodingtopics.com/blog/trending-products",
+        "https://www.alibaba.com/product-introduction/Monohydrate-Creatine-Gummies-Private-Label-Creatine_1601244654448.html",
+        "https://wonnda.com/product-types/private-label-creatine/"
+      ],
+      "orders_per_customer": 2.2,
+      "landed_cost": 4.4,
+      "fees": 8.4,
+      "cac": 16.0,
+      "margin": 21.82,
+      "margin_pct": 0.3307360029100609,
+      "score": 6.32
+    },
+    {
+      "name": "Peptide eye cream, 0.5 oz, 2-pack",
+      "category": "skincare",
+      "kill_reason": null,
+      "price": 44.99,
+      "unit_cost": 12.0,
+      "freight_per_unit": 0.8,
+      "duty_rate": 0.0,
+      "fulfill_fee": 4.2,
+      "platform_fee_rate": 0.15,
+      "est_cpc": 1.6,
+      "est_cvr": 0.09,
+      "expected_orders_per_customer": 1.8,
+      "trend_score": 8,
+      "demand_score": 6,
+      "competition_score": 3,
+      "complaint_score": 5,
+      "fixable_complaints": [
+        "irritates eyes",
+        "pump clogs",
+        "small amount for the price"
+      ],
+      "angle": "Airless pump, fragrance-free formula, 2-pack sized for about three months.",
+      "regulatory_notes": "Cosmetic under MoCRA: facility registration, product listing, safety substantiation, ingredient labeling. No claims to repair collagen or treat wrinkles (drug claims). Expect Amazon beauty gating.",
+      "notes": "Exploding Topics: 6,600/mo, +325%. Carried from 2026-11-09; private-label quotes conflict ($2.40-4.80 vs $4-22 per jar). I used $6/jar for a US contract-made, boxed jar; 0% duty assumes US fill. Heavily competed by established brands.",
+      "sources": [
+        "https://explodingtopics.com/blog/product-topics",
+        "https://xiranskincare.com/top-10-private-label-peptide-skincare-manufacturers/",
+        "https://www.pravadaprivatelabel.com/products/advanced-firming-eye-cream"
+      ],
+      "orders_per_customer": 1.8,
+      "landed_cost": 12.8,
+      "fees": 10.95,
+      "cac": 17.78,
+      "margin": 20.46,
+      "margin_pct": 0.25261073105408877,
+      "score": 5.47
+    }
+  ],
+  "killed": [
+    {
+      "name": "Hydrogel under-eye patches, 2 jars of 60 pairs",
+      "reason": "margin after ads -12% is under 25%"
+    },
+    {
+      "name": "PDRN peptide face serum, 30 ml, 2-pack",
+      "reason": "margin after ads 14% is under 25%"
+    },
+    {
+      "name": "Kojic acid + niacinamide dark-spot serum, 1 oz, 2-pack",
+      "reason": "margin after ads -7% is under 25%"
+    },
+    {
+      "name": "Lymphatic sculpting face brush + gua sha kit",
+      "reason": "margin after ads 12% is under 25%"
+    },
+    {
+      "name": "Batana oil hair growth mask, 4 oz, 2-pack",
+      "reason": "margin after ads 19% is under 25%"
+    },
+    {
+      "name": "Whipped beef tallow face and body balm, 4 oz, 2-pack",
+      "reason": "margin after ads 20% is under 25%"
+    },
+    {
+      "name": "Silicone toe spacers, 4-pair set with carry pouch",
+      "reason": "only $22 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Bluetooth/USB 4x6 thermal shipping label printer (110mm), with starter label roll",
+      "reason": "margin after ads -18% is under 25%"
+    },
+    {
+      "name": "15.6-inch 1080p USB-C portable monitor with magnetic cover stand",
+      "reason": "margin after ads 0% is under 25%"
+    },
+    {
+      "name": "1L mini rice cooker with steam tray, non-stick pot",
+      "reason": "only $40 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Foldable ionic travel hair dryer with diffuser and storage pouch",
+      "reason": "margin after ads 8% is under 25%"
+    },
+    {
+      "name": "Magnetic fridge spice rack, 4-pack with side shelf",
+      "reason": "only $30 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Japanese-style shiki floor futon mattress, twin, removable washable cover",
+      "reason": "margin after ads 19% is under 25%"
+    },
+    {
+      "name": "Self-adhesive PET felt acoustic wall panels, 24-pack 12x12 in",
+      "reason": "margin after ads -23% is under 25%"
+    },
+    {
+      "name": "Non-electric dual-nozzle bidet attachment plus handheld travel bidet kit",
+      "reason": "margin after ads 2% is under 25%"
+    },
+    {
+      "name": "20,000mAh 45W power bank with built-in USB-C cable and display",
+      "reason": "only $40 per customer per year (minimum $40)"
+    },
+    {
+      "name": "Car wash foam sprayer kit: 2L pump foamer, 2 microfiber mitts",
+      "reason": "margin after ads 16% is under 25%"
+    },
+    {
+      "name": "Foldable 4-wheel dog stroller, zipperless entry, up to 33 lb",
+      "reason": "margin after ads -22% is under 25%"
+    },
+    {
+      "name": "Kids adjustable light-up quad roller skates, 4 sizes, with helmet and pads set",
+      "reason": "margin after ads -4% is under 25%"
+    },
+    {
+      "name": "Classic wooden toy train set, 100 pieces, with storage bin",
+      "reason": "margin after ads -4% is under 25%"
+    },
+    {
+      "name": "Laundry scent booster beads, 3-bag bundle (3 x 10 oz)",
+      "reason": "margin after ads 19% is under 25%"
+    },
+    {
+      "name": "Hair wax stick, 2.7 oz, 3-pack (coconut, strong hold)",
+      "reason": "margin after ads 9% is under 25%"
+    },
+    {
+      "name": "Brow lamination and styling gel kit with brush, 2-pack",
+      "reason": "margin after ads 23% is under 25%"
+    },
+    {
+      "name": "Dissolvable microneedle acne/blemish patches",
+      "reason": "FDA has not authorized any microneedling device for over-the-counter sale, so acne-treatment microneedle patches are unapproved devices."
+    },
+    {
+      "name": "GLP-1 supplement",
+      "reason": "Products marketed as 'GLP-1' supplements imply drug effects that unapproved supplements cannot claim, and the name invites FDA and FTC action."
+    }
+  ]
+}

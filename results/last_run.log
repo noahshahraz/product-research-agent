@@ -1,28 +1,29 @@
-Run started Mon Nov  9 23:48:13 UTC 2026
+Run started Mon Nov 16 23:45:44 UTC 2026
 TOKEN CHECK: length 108
 TOKEN CHECK: prefix ok
 TOKEN CHECK: no whitespace
 
 === Round 1 ===
-Status: the JSON file is written. I'm adding the three kill entries and checking that the file parses. That step needs a command approval, so I'll retry it.
-The research file is written, but the last cleanup didn't go through, so the file has one inconsistency. It has not been checked by a JSON parser.
+I wrote the file and I'm now fixing a wrong source URL and checking the JSON. The shell needs approval for those commands, so I'm using the edit tool instead.
+The research is done and I wrote `results/2026-11-16.raw.json`, but I couldn't validate it. A source URL in it is wrong, and the permission prompts blocked my fix.
 
-**What's in `results/2026-11-09.raw.json`:** 26 candidates with full economics. I wrote the file in a single pass and could not run a parse or schema check on it.
+- **Bad URL:** Several candidates cite `https://explodingtopics.com/blog/product-topics`, which I mistyped. The real page is `https://explodingtopics.com/product-topics`. Both the `sed` fix and a follow-up Edit on that file needed approval and weren't granted, so I stopped there. A global replace of that string fixes it.
+- **Not validated:** My JSON-validity and candidate-count check also hit an approval prompt. By my count the file has 25 candidates with full economics and 2 kills, each with at least two source URLs, but I haven't run a parser over it.
 
-**What's wrong with it:**
-- The `changes_vs_last_run` text says three kill entries are repeated from the prior run (research-use-only peptides, designer-dupe perfumes, compounded GLP-1 drops). Those entries are not in the file.
-- My edit to add them was denied, and so were my attempts to run a fix script. I didn't try to work around the denial.
-- To fix it, grant write or run permission and I'll add the entries. Otherwise delete that sentence.
+**Findings**
+- **Tariffs:** IEEPA duties ended Feb 24, 2026 and the Section 122 surcharge expired Jul 24. China goods now pay MFN plus Section 301 (25% on Lists 1–3, 7.5% on List 4A) plus a 12.5% forced-labor tariff. I used 0.375 for Lists 1–3 goods and 0.20 for List 4A goods. I couldn't confirm which list covers cosmetics, toys or skates, so those rates are labeled as guesses.
+- **Exclusions:** The 178 Section 301 exclusions were due to expire Nov 9. I found no extension.
+- **Trend sources:** I took the trend leads from Exploding Topics and Google's Holiday 100. Amazon Movers & Shakers and Reddit returned nothing usable. TikTok Creative Center gave only secondhand guides, and I found no TikTok Shop November 2026 ranking.
+- **Last week's top three:** I kept the hypochlorous acid spray, nHA toothpaste and peptide eye cream and re-checked them. I changed no inputs, since no better supplier quotes turned up.
+- **New candidates:** under-eye patches, PDRN serum, kojic acid serum, lymphatic face brush kit, batana mask, tallow balm, toe spacers, creatine gummies, kids' roller skates, wooden train set, scent beads, hair wax stick, brow gel kit, magnetic spice rack and dog stroller.
+- **Kills:** acne-claim microneedle patches, because the FDA has authorized none for over-the-counter sale, and "GLP-1" supplements. The GLP-1 kill rests on my judgment, not a source I opened, and the notes say so.
 
-**How reliable the numbers are:**
-- Fewer than 30 searches were run, and many of those returned thin results. Amazon and Reddit couldn't be fetched.
-- Only a few unit costs come from Alibaba listings: the label printer, portable monitor, rice cooker, power bank, bidet kit, hair dryer, label rolls, and the toothpaste and hypochlorous-spray supplier prices. The rest of the unit costs (litter box, vacuum, projector, floor beds and others) are my own estimates, and each is marked as an estimate in `notes`.
-- Retail prices, freight, fulfillment fees, CPC and conversion rates are benchmarks or guesses, not measured figures.
-- The 12.5% forced-labor tariff (effective July 24, 2026) is confirmed by several secondary sources, but I couldn't check it against USTR, CBP or the Federal Register. IEEPA tariffs being gone is also from secondary sources.
-- Duty rates per product are conservative estimates. Tariff aggregator sites disagree on the Section 301 list for hair dryers, label printers and rice cookers.
-- Several candidates will probably fail the scoring script's margin screen. Last week's run had zero survivors, so I wouldn't expect many here either.
+**Weak spots**
+- Unit costs for the skincare items and most home goods are my estimates, because suppliers publish no per-unit quotes. Each is flagged in `notes`.
+- The electronics and home items carried over from last week, such as the label printer, monitor and rice cooker, were not re-verified.
+- The competition and complaint scores are my judgment. I had no Amazon review counts.
+- Several of the new items price under $40, including the batana mask, toe spacers and hair wax stick. They are included with honest numbers, so the scoring screen may drop them.
+- I dropped last week's cordless vacuum, litter box, neck massager, mini projector, water filter, padel set and collagen powder. I found no new evidence for them.
 
-**Last run's file:** `results/2026-11-02.md` shows no ranked shortlist, only kills. The prompt's "previous run" list was empty, and I didn't compare scores against it.
-
-Run cost so far: $1.27
-Wrote /home/runner/work/product-research-agent/product-research-agent/results/2026-11-09.raw.json
+Run cost so far: $1.41
+Wrote /home/runner/work/product-research-agent/product-research-agent/results/2026-11-16.raw.json
